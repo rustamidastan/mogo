@@ -1,0 +1,197 @@
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap');
+  :root {
+      --bg-banner: linear-gradient(to bottom,#f48c82, #fbe089);
+      --white:#fff;
+  }
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Montserrat";
+}
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+/* START SITE BANNER SECTION  */
+.banner {
+    background-image: url(../images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.site-header {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.site-logo {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.site-logo:hover {
+    opacity: 0.7;
+}
+.sitenav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+.sitenav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sitenav__item {
+    margin-right: 50px;
+}
+.sitenav__link {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+.sitenav__link:hover {
+    color: #fce38a;
+    border-color: #fce38a;
+}
+.site-header__shopping-btn,
+.site-header__search-btn {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+.site-header__search-btn {
+    background-image: url(../images/search-icon.png);
+}
+.site-header__shopping-btn {
+    background-image: url(../images/shopping-card.png);
+    margin-right: 40px;
+}
+.site-header__search-btn:hover,
+.site-header__shopping-btn:hover {
+    opacity: 0.7;
+}
+.site-header__hamburger-icon {
+    display: none;
+}
+.site-header__hamburger-icon div {
+    width: 20px;
+    height: 3px;
+    background-color: var(--white);
+}.site-header__hamburger-icon div:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+
+/* START BANNER HERO SECTION  */
+.site-hero {
+    padding-top: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+.site-hero__subtitle {
+    font-size: 72px;
+    line-height: 1.1;
+    font-weight: 400;
+    font-family: "Kaushan Script";
+}
+.site-hero__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    font-size: 150px;
+    line-height: 1.1;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.site-hero__title::after {
+    width: 65px;
+    height: 5px;
+    margin-top: 70px;
+    content: "";
+    background-color: var(--white);
+}
+.site-hero__btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    border:  4px solid var(--white);
+    transition: all 0.3s ease;
+}
+.site-hero__btn:hover {
+    color: #fbe089;
+    background-color: var(--white);
+}
+.banner__bottom-list {
+    margin-top: 145px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.banner__bottom-list-item {
+    width: 280px;
+    padding: 25px 0;
+    border-top: 3px solid var(--white);
+}
+.banner__bottom-list-item:not(:last-child) {
+    margin-right: 40px;
+}
+.bottom-list-item__number {
+    font-size: 18px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.banner__bottom-list-item:first-child {
+    position: relative;
+}
+.banner__bottom-list-item:first-child::before {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 25%;
+    height: 3px;
+    content: "";
+    background-color:#f48c82;
+}
