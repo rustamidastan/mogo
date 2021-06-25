@@ -189,3 +189,140 @@
         height: auto;
     }
 }
+
+
+/* START OUR TEAM  */
+@media screen and (max-width:800px) {
+    .our-team__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .our-team__list {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:450px) {
+    .our-team__item {
+        width: 290px;
+        height: 370px;
+    }
+}
+
+/* START PORTFOLIO SECTION  */
+
+@media screen and (max-width:800px) {
+    .portfolio__gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ff fs"
+        "sf ss"
+        "h fl"
+        "h sl";
+    }
+    #firstrow-first {
+        width: 50vw;
+        height: 30vh;
+    }
+    #firstrow-second {
+        width: 50vw;
+        height: 30vh;
+    }
+    #firstrow-last{
+        width: 50vw;
+        height: 30vh;
+    }
+    #horizantal {
+        width: 50vw;
+        height: 60vh;
+    }
+    #secondrow-first {
+        width: 50vw;
+        height: 30vh;
+    }
+    #secondrow-second {
+        width: 50vw;
+        height: 30vh;
+    }   
+    #secondrow-last {
+        width: 50vw;
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #firstrow-first {
+        height: 25vh;
+    }
+    #firstrow-second {
+        height: 25vh;
+    }
+    #firstrow-last{
+        height: 25vh;
+    }
+    #horizantal {
+        height: 50vh;
+    }
+    #secondrow-first {
+        height: 25vh;
+    }
+    #secondrow-second {
+        height: 25vh;
+    }   
+    #secondrow-last {
+        height: 25vh;
+    }
+}
+
+/* START HAPPY CLIENTS  */
+@media screen and (max-width:800px) {
+    .happy-clients__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 30px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .happy-clients__item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .happy-clients__info {
+        justify-content: center;
+        align-items: center;
+    }
+    .happy-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .happy-clients__job {
+        justify-content: center;
+        align-items: center;
+    }
+    .happy-clients__text {
+        text-align: center;
+    }
+}
+
+/* START BLOG SECTION  */
+@media screen and (max-width:800px) {
+    .blog__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .blog__item {
+        width: 90%;
+    }
+    .blog__item img {
+        width: 100%;
+        height: auto;
+    }
+}
