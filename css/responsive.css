@@ -11,6 +11,9 @@
     .site-header {
         justify-content: space-between;
     }
+    .site-logo {
+        margin-right: auto;
+    }
     .sitenav {
         padding: 15vh 0;
         display: none;
