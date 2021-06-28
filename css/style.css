@@ -517,6 +517,54 @@ body {
     background-image: url(../images/icon-top.png);
 }
 
+/* START FIRST CAROUSEL  */
+.first-carousel {
+    padding: 70px 0;
+    background-color: var(--bg-muted);
+}
+.carousel__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.carousel__item {
+    display: flex;
+    align-items: center;
+}
+.carousel-img-wrapper {
+    margin-right: 60px;
+    padding: 30px;
+    border: 2px solid var(--statiistics-color);
+}
+.carousel__text {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Roboto";
+    font-style: italic;
+    color: var(--muted);
+}
+.carousel__name {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Kaushan Script";
+}
+.carousel__name::before {
+    width: 60px;
+    height: 4px;
+    margin-right: 10px;
+    content: "";
+    background-color: var(--red);
+}
+.slick-initialized .slick-slide {
+    display: flex;
+}
+
 /* START UOR TEAM SECTION  */
 
 .our-team {
@@ -623,10 +671,25 @@ body {
 
 /* START LOGOS SECTION  */
 .logos {
-    width: 100%;
-    height: 240px;
+    padding: 60px 0;
     background-color: var(--bg-muted);
     opacity: 0.7;
+}
+.logos__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logos__link {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+.logos__link:hover {
+    opacity: 1;
 }
 
 /* START PORTFOLIO SECTION  */
@@ -756,6 +819,18 @@ body {
 }
 
 
+/* START SECOND CAROUSEL  */
+.second-carousel {
+    padding: 100px 0;
+}
+.second-carousel img {
+    border-radius: 260px;
+    margin-right: 20px;
+}
+.carousel__list {
+    margin-bottom: 40px;
+}
+
 /* START HAPPY CLIENTS SECTION  */
 .happy-clients {
     padding: 100px 0;
@@ -880,6 +955,7 @@ body {
 }
 .blog__item-link:hover {
     opacity: 0.7;
+    text-decoration: underline;
 }
 .blog__text {
     font-size: 15px;
@@ -934,4 +1010,194 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+
+/* START SITE FOOTER SECTION  */
+.site-footer {
+    padding-top: 70px;
+    background-color: var(--bg-muted);
+}
+.footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer__link {
+    text-decoration: none;
+}
+.footer__section-title {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer__row {
+    display: flex;
+    border-bottom: 1px solid var(--muted);
+}
+.footer__info {
+    max-width: 470px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__site-logo {
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ccc;
+}
+.footer__text {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: var(--muted);
+}
+.footer__followers {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--black);
+}
+.footer__followers-number {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #000;
+}
+.footer__socials {
+    width: 100%;
+    padding-top: 15px;
+    margin-bottom: 35px;
+    display: flex;
+    border-top: 1px solid var(--muted);
+}
+.footer__socials-list {
+    display: flex;
+    align-items: center;
+}
+.footer__socials-link {
+    color: var(--statiistics-color);
+    font-size: 18px;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+.footer__socials-link:hover {
+    opacity: 0.7;
+}
+.footer__socials-item {
+    margin-left: 15px;
+}
+.footer__form {
+    display: flex;
+}
+.footer__form input {
+    padding: 13px;
+    border: 1px solid;
+    border-color: var(--muted);
+    outline: none;
+}
+.footer__form input::placeholder {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: italic;
+}
+.footer__form-btn {
+    padding: 0 30px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    background-color: var(--statiistics-color);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.footer__form-btn:hover {
+    border-color: var(--statiistics-color);
+    color: var(--statiistics-color);
+    background-color: transparent;
+}
+.footer__blogs {
+    margin: 0 30px;
+}
+.footer__blogs-item {
+    display: flex;
+    align-items: center;
+}
+.footer__blogs-info {
+    max-width: 340px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-blogs-link {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--black);
+    transition: all 0.3s ease;
+    font-family: "Montserrat";
+}
+.footer-blogs-link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+.footer__blogs-time {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto";
+    color: var(--muted);
+}
+.footer__blogs-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.footer__instagram-list {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: auto;
+    grid-column-gap: 4px;
+}
+.footer__instagram-link {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Roboto';
+    font-style: italic;
+    color: var(--black);
+    transition: all 0.3s ease;
+}
+.footer__instagram-link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+.footer__bottom {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+}
+.footer__bottom-link {
+    color: var(--red);
+    font-weight: 700;
+    font-family: "Montserrat";
+    transition: all 0.3s ease;
+}
+.footer__bottom-link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
 }
