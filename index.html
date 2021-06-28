@@ -14,17 +14,20 @@
 </head>
 
 <body>
-    <section class="banner">
-        <div class="container">
-            <header class="site-header">
+    <section class="banner" id="home">
+
+        <header class="site-header">
+            <div class="container site-header__container">
                 <a href="#" class="site-logo">MoGo</a>
                 <nav class="sitenav">
                     <ul class="sitenav__list">
-                        <li class="sitenav__item"><a href="#" class="sitenav__link">About</a></li>
-                        <li class="sitenav__item"><a href="#" class="sitenav__link">Service</a></li>
-                        <li class="sitenav__item"><a href="#" class="sitenav__link">Work</a></li>
-                        <li class="sitenav__item"><a href="#" class="sitenav__link">Blog</a></li>
-                        <li class="sitenav__item"><a href="#" class="sitenav__link">Contact</a></li>
+                        <li class="sitenav__item"><a href="#home" class="sitenav__link">Home</a></li>
+                        <li class="sitenav__item sitenav__active"><a href="#about" class="sitenav__link">About</a>
+                        </li>
+                        <li class="sitenav__item"><a href="#service" class="sitenav__link">Service</a></li>
+                        <li class="sitenav__item"><a href="#work" class="sitenav__link">Work</a></li>
+                        <li class="sitenav__item"><a href="#blog" class="sitenav__link">Blog</a></li>
+                        <li class="sitenav__item"><a href="#contact" class="sitenav__link">Contact</a></li>
                     </ul>
                     <div class="site-header__btns">
                         <button class="site-header__shopping-btn"></button>
@@ -36,8 +39,9 @@
                     <div></div>
                     <div></div>
                 </div>
-
-            </header>
+            </div>
+        </header>
+        <div class="container">
             <div class="site-hero">
                 <span class="site-hero__subtitle">Create Template</span>
                 <h1 class="site-hero__title">Welcome to Mogo</h1>
@@ -67,7 +71,7 @@
 
     <!-- START ABOU SECTION  -->
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <span class="section__subtitle">What we do</span>
             <h2 class="section__title">story about us</h2>
@@ -133,7 +137,7 @@
     </section>
 
 
-    <section class="services">
+    <section class="services" id="service">
         <div class="container">
             <span class="section__subtitle">We work with</span>
             <h2 class="section__title">amazing services</h2>
@@ -341,7 +345,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="work">
         <div class="container">
             <span class="section__subtitle">What we do</span>
             <h2 class="section__title">some of our work</h2>
@@ -493,7 +497,7 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <span class="section__subtitle">Our stories</span>
             <h2 class="section__title">latest blog</h2>
@@ -550,7 +554,7 @@
         </div>
     </section>
 
-    <footer class="site-footer">
+    <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer__row">
                 <div class="footer__info">
@@ -664,6 +668,7 @@
     <script src="slick/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/c955ab8686.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
     <script>
         $('.carousel__list').slick({
             dots: true,
@@ -671,6 +676,16 @@
             speed: 300,
             slidesToShow: 1,
             adaptiveHeight: true
+        });
+    </script>
+    <script>
+        $('.sitenav__list').onePageNav({
+            currentClass: 'sitenav__active',
+            changeHash: false,
+            scrollSpeed: 750,
+            scrollThreshold: 0.5,
+            filter: '',
+            easing: 'swing',
         });
     </script>
 

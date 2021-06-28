@@ -22,3 +22,4 @@ for (let i = 0; i < 3; i++) {
         weDoTab[i].classList.toggle('we-do__tab-active');
     })
 }
+
