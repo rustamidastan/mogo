@@ -170,8 +170,9 @@ body {
 
 
 /* START BANNER HERO SECTION  */
-.site-hero {
+.site-hero__item {
     padding-top: 135px;
+    padding-bottom: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,6 +257,44 @@ body {
     background-color:#f48c82;
 }
 
+.site__hero .slick-dots {
+    position: relative;
+    top: -30px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.site__hero .slick-dots li {
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    display: flex;
+    width: 280px;
+    border-top: 3px solid var(--white);
+}
+.site__hero .slick-dots span {
+    font-size: 18px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.site__hero .slick-dots li.slick-active::before {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 25%;
+    height: 3px;
+    content: "";
+    background-color:#f48c82;
+}
+.site__hero .slick-dots li.slick-active {
+    opacity: 1;
+}
+
 /* START ABOUT SECTION  */
 .about {
     padding-top: 90px;
@@ -311,8 +350,8 @@ body {
     display: block;
 }
 .about__item:hover {
-    top: -10px;
-    left: -10px;
+    animation-name: hover;
+    animation-duration: 1s;
 }
 .about__item-hover {
     position: absolute;
@@ -334,6 +373,21 @@ body {
 }
 .about__item:hover .about__item-hover {
     display: flex;
+}
+
+@keyframes hover {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    50% {
+        left: -10px;
+        top: -10px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
 }
 
 

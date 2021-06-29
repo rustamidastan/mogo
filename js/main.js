@@ -23,3 +23,38 @@ for (let i = 0; i < 3; i++) {
     })
 }
 
+
+let searchBtn = document.querySelector('.site-header__search-btn');
+let inputSearch = document.querySelector('.serach-input');
+
+searchBtn.addEventListener('click', function () {
+    if (inputSearch.style.display == 'block')
+        inputSearch.style.display = 'none';
+    else inputSearch.style.display = 'block'
+})
+
+
+
+let dotsItem = document.querySelector('.slick-dots')
+
+$('.site__hero-carousel').slick({
+    dots: true,
+    customPaging: function (slider, i) {
+        if (i == 0) {
+            return '<span class="slider_num">01</span> intro';
+
+        } else if (i == 1) {
+            return '<span class="slider_num">02</span> work';
+        } else if (i == 2) {
+            return '<span class="slider_num">03</span> about';
+        } else if (i == 3) {
+            return '<span class="slider_num">04</span> contact';
+        }
+    },
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false
+});
