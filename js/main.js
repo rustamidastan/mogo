@@ -10,18 +10,35 @@ menuIcon.addEventListener('click', function () {
 
 
 // START WE DO TABS 
-let weDoButton = document.querySelectorAll('.we-do__tab-btn');
-let weDoText = document.querySelectorAll('.we-do__tab-text')
-let weDoTab = document.querySelectorAll('.we-do-tab');
+// let weDoButton = document.querySelectorAll('.we-do__tab-btn');
+// let weDoText = document.querySelectorAll('.we-do__tab-text')
+// let weDoTab = document.querySelectorAll('.we-do-tab');
 
-for (let i = 0; i < 3; i++) {
-    weDoButton[i].addEventListener('click', function () {
-        weDoTab[0].classList.remove('we-do__tab-active');
-        weDoTab[1].classList.remove('we-do__tab-active');
-        weDoTab[2].classList.remove('we-do__tab-active');
-        weDoTab[i].classList.toggle('we-do__tab-active');
-    })
-}
+// for (let i = 0; i < 3; i++) {
+//     weDoButton[i].addEventListener('click', function () {
+//         weDoTab[0].classList.remove('we-do__tab-active');
+//         weDoTab[1].classList.remove('we-do__tab-active');
+//         weDoTab[2].classList.remove('we-do__tab-active');
+//         weDoTab[i].classList.toggle('we-do__tab-active');
+//     })
+// }
+
+const questions = document.querySelectorAll(".we-do-tab");
+
+questions.forEach(function (question) {
+    const btn = question.querySelector(".we-do__tab-btn");
+
+    btn.addEventListener("click", function () {
+
+        questions.forEach(function (item) {
+            if (item !== question) {
+                item.classList.remove("we-do__tab-active");
+            }
+        });
+
+        question.classList.toggle("we-do__tab-active");
+    });
+});
 
 
 let searchBtn = document.querySelector('.site-header__search-btn');
