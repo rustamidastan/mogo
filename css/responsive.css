@@ -184,6 +184,9 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .we-do__tab-btn {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:450px) {
