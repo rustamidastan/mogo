@@ -28,6 +28,11 @@ body {
     font-family: "Montserrat";
     overflow-x: hidden;
 }
+
+button {
+    cursor: pointer;
+}
+
 .container {
     max-width: 1270px;
     margin: 0 auto;
@@ -1187,6 +1192,7 @@ body {
     line-height: 1.5;
     font-weight: 700;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 .footer__form-btn:hover {
     border-color: var(--statiistics-color);

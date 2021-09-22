@@ -404,4 +404,14 @@
     .site-header__container {
         width: 100vw;
     }
+
+    .slick-dots li{
+        width: 17vw !important;
+        font-size: 11px;
+        padding-left: 0 !important;
+    }
+
+    .slider_num {
+        font-size: 11px !important;
+    }
 }
