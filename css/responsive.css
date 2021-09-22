@@ -390,3 +390,18 @@
         align-items: center;
     }
 }
+
+
+@media screen and (max-width:450px) {
+
+    .container {
+        overflow-x: hidden !important;
+    }
+    .site-header {
+        width: 100vw;
+    }
+
+    .site-header__container {
+        width: 100vw;
+    }
+}
